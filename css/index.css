@@ -1,0 +1,253 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#myBtn {
+    position: fixed;
+    bottom: 10px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #dc1a1a;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#myBtn:hover {
+    background-color: orange;
+}
+
+.navbar, .banner-section {
+    background: linear-gradient(to right, #f2662f, #f69a1e);
+}
+.nav-box a {
+    font-size: 14px;
+    font-weight: 600;
+    width: 100px;
+}
+
+.nav-box .btn {
+    width: 128px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.nav-box {
+    height: 100%;
+}
+
+.banner-box button {
+    font-size: 14px;
+    font-weight: 500;
+    background: #ffac00;
+    border-radius: 30px;
+    border: none;
+    width: 164px;
+    height: 46px;
+    color: white;
+}
+
+.red:hover {
+    color: black;
+    background: red;
+}
+
+.orng:hover {
+    background: #f28c1a;
+}
+
+.learn-col p:hover{
+    color: #e11b24;
+}
+.wt-100 {
+    width: 100%;
+}
+
+.ptb {
+    padding: 70px 0 70px 0;
+}
+
+.compnies-section {
+    background: url(../img/circle-halfcircle.png) no-repeat left top / 100% 100%;
+}
+
+.digital-text p {
+    font-size: 14px;
+}
+
+.text-box p {
+    font-size: 16px;
+    text-align: center;
+    line-height: 36px;
+    color: #002e47;
+}
+
+.text-box a {
+    color: #ef3d10;
+}
+
+.learn-col p {
+    font-size: 18px;
+    color: #002e47;
+}
+
+.learn-box .learn-col img {
+    width: 170px;
+}
+
+.learn-col i {
+    color: #f28c1a;
+    width: 26px;
+    font-size: 20px;
+}
+
+.digital-section {
+    background: url(../img/Terrene-Dektop_Home-page-2-1.png) no-repeat left top / 100% 100%;
+}
+
+.digital-text-box p {
+    font-weight: 600;
+}
+.svp-section {
+    background: #F28811;
+}
+
+.svp-p {
+    border: 1px solid white;
+    position: relative;
+}
+
+.triangle-down-two {
+    content: '';
+    position: absolute;
+    left: 35px;
+    bottom: -13px;
+    width: 25px;
+    height: 25px;
+    background: #ffffff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background: #F28811;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.svp-b {
+    border-left: 2px solid rgba(0, 46, 71, 1);
+}
+
+.svp {
+    border-left: 2px solid rgba(0, 46, 71, 1);
+}
+
+.circle {
+    position: absolute;
+    top: -26px;
+    left: -11px;
+    width: 60px;
+    height: 60px;
+    color: #e11b24;
+    border: 2px solid #e11b24;
+    border-radius: 50%;
+    background: #F28811;
+    z-index: 1;
+    text-align: center;
+    line-height: 57px;
+    font-size: 22px;
+}
+
+.about-container p {
+    line-height: 40px;
+    color: #002e47;
+    font-size: 16px;
+}
+
+.futare-section {
+    background: url(../img/circlebghomepage.jpg) no-repeat left top / 100% 100%;
+}
+
+.gallery-col {
+    width: 350px;
+    height: 350px;
+    box-shadow: 2px 1px 25px 5px rgba(166, 166, 166, 0.2);
+}
+
+.gallery-col p {
+    color: #002e47;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.form-section {
+    background: url(../img/ready-to-reimagine-bg.jpg) no-repeat left top / 100% 100%;
+}
+
+.form-box input {
+    border-radius: 5px;
+    border: none;
+    height: 50px;
+}
+
+.form button {
+    font-size: 14px;
+    font-weight: 500;
+    background: #e11b24;
+    border-radius: 30px;
+    border: none;
+    width: 164px;
+    height: 46px;
+    color: white;
+}
+footer {
+    background: black;
+}
+
+.icon i {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    line-height: 36px;
+    border-radius: 50%;
+    color: black;
+    text-align: center;
+}
+.para {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.p {
+    line-height: 15px;
+}
+
+.b {
+    border-bottom: 2px solid orange;
+    width: 40px;
+}
+
+.logo-box span {
+    background: url(../img/download.png);
+}
+.carousel-control-prev{
+    margin-left: -30px;
+}
+@media (max-width: 480px) {
+    .futare-section, .digital-section, .compnies-section {
+        background-image: none;
+    }
+    .navbar-brand img{
+        max-width: 120px;
+    }
+    .carousel-control-prev{
+        width: auto;
+        margin-left: 0;
+    }
+}
