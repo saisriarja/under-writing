@@ -486,27 +486,27 @@
                     <img class="img-fluid" src="img/readytoimagine-image.png" alt="">
                 </div>
                 <div class="form col-lg-8 col-md-8 col-sm-12 p-0 ">
-                    <form>
+                    <form class="basic-form" action="" method="post">
                         <div class="form-row">
                             <div class="col-lg-5 m-3">
                                 <input type="text" class="form-control" style="height: 50px;" id="name"
-                                    placeholder="Name" name="Name">
+                                    placeholder="Name" minlength="1" name="Name" required>
                             </div>
                             <div class="col-lg-5 m-3">
                                 <input type="email" class="form-control" style="height: 50px;" placeholder="Email"
-                                    name="email">
+                                    name="email"minlength="2" required>
                             </div>
                         </div>
                     </form>
-                    <form action="/action_page.php">
+                    <form class="basic-form" action="" method="post">
                         <div class="form-row">
                             <div class="col-lg-5 m-3">
                                 <input type="text" class="form-control" style="height: 50px;" id="email"
-                                    placeholder="Phone Number" name="phone">
+                                    placeholder="Phone Number" name="phone" required>
                             </div>
                             <div class="col-lg-5 m-3">
                                 <input type="text" class="form-control" style="height: 50px;" placeholder="Company"
-                                    name="Company">
+                                    name="Company" required>
                             </div>
                         </div>
                         <div class="red-button px-4 p-0">
