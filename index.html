@@ -11,13 +11,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -35,8 +31,9 @@
 <body>
     <button onclick="topFunction()" id="myBtn" title="Go to top"><a href="#" class="text-white"><i
                 class="fa fa-arrow-up"></i></a></button>
-    <header class="d-flex flex-row flex-wrap col-lg-12 col-md-12 col-sm-12 p-0">
-        <nav class="navbar navbar-expand-md bg-dark navbar-dark w-100 ">
+    <header class="d-flex flex-row flex-wrap col-lg-12 col-md-12 col-sm-12 pb-5 pt-lg-0">
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark w-100"
+            style="position: fixed; z-index: 99; top: 0; left: 0;">
             <a class="navbar-brand" href="#"><img class="img-fluid" src="img/terrene-logo.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -69,7 +66,7 @@
             </div>
         </nav>
     </header>
-    <section class="banner-section ptb">
+    <section class="banner-section ptb pt-5">
         <div class="container">
             <div class="owl-carousel owl-theme banner-carousel">
                 <div class="item">
@@ -77,7 +74,7 @@
                         class="banner-container col-lg-12 col-md-12 col-sm-12 d-flex flex-row flex-wrap align-items-center p-0">
                         <div class="banner-left col-lg-6 p-0">
                             <div class="banner-box">
-                                <h1 class="text-white wt-100">
+                                <h1 class="text-white wt-100 font-weight-bold">
                                     ONE SOLUTION FOR ALL YOUR UNDERWRITING NEEDS.
                                 </h1>
                                 <div>
@@ -100,7 +97,7 @@
                         class="banner-container col-lg-12 col-dm-12 col-sm-12 d-flex flex-row flex-wrap align-items-center p-0">
                         <div class="banner-left col-lg-6 p-0">
                             <div class="banner-box">
-                                <h1 class="text-white wt-100">
+                                <h1 class="text-white wt-100 font-weight-bold">
                                     ONE SOLUTION FOR ALL YOUR UNDERWRITING NEEDS.
                                 </h1>
                                 <div>
@@ -154,7 +151,23 @@
                             <p><i class="fa fa-check"></i>Comprehensive view of risk</p>
                             <p><i class="fa fa-check"></i>Quicker decisions</p>
                             <div class="d-flex justify-content-center">
-                                <a href="#" class="text-danger font-weight-bold pb-3"><u>LEARN MORE</u></a>
+                                <button type="button" class="text-danger font-weight-bold pb-3 border-0 bg-white"
+                                    data-toggle="modal" data-target="#myModal"><u>LEARN MORE</u></button>
+                                <div class="modal" id="myModal">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">RISK INSIGHTS</h4>
+                                                <button type="button" class="close"
+                                                    data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="learn-col p-0">
@@ -166,7 +179,24 @@
                             <p><i class="fa fa-check"></i>Appropriate business coverage </p>
                             <p><i class="fa fa-check"></i>Accurate pricing/loss factors</p>
                             <div class="d-flex justify-content-center">
-                                <a href="#" class="text-danger font-weight-bold pb-3"><u>LEARN MORE</u></a>
+                                <button type="button" class="text-danger font-weight-bold pb-3 border-0 bg-white"
+                                data-toggle="modal" data-target="#myModal"><u>LEARN MORE</u></button>
+                            <div class="modal" id="myModal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">NAICS CLASSIFICATION</h4>
+                                            <button type="button" class="close"
+                                                data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger"
+                                                data-dismiss="modal">Close</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
                             </div>
                         </div>
                         <div class="learn-col p-0">
@@ -178,7 +208,24 @@
                             <p><i class="fa fa-check"></i>outlier Identification</p>
                             <p><i class="fa fa-check"></i>Highlight risk for loss control</p>
                             <div class="d-flex justify-content-center">
-                                <a href="#" class="text-danger font-weight-bold pb-3"><u>LEARN MORE</u></a>
+                                <button type="button" class="text-danger font-weight-bold pb-3 border-0 bg-white"
+                                data-toggle="modal" data-target="#myModal"><u>LEARN MORE</u></button>
+                            <div class="modal" id="myModal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">BOOK SNAPHOT</h4>
+                                            <button type="button" class="close"
+                                                data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger"
+                                                data-dismiss="modal">Close</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -275,11 +322,11 @@
                 </div>
                 <div
                     class="svp-three-col d-flex flex-row flex-wrap justify-content-between p-0 col-lg-12 col-md-12 col-sm-12">
-                    <div class="col-lg-4 col-md-4 col-sm-12 p-0">
+                    <div class="col-lg-4 col-md-3 col-sm-12 p-0">
                         <div class="circle">
                             <i class="fa fa-quote-left"></i>
                         </div>
-                        <div class="svp-p mx-lg-3 p-lg-4 p-md-3 py-5 px-4">
+                        <div class="svp-p mx-lg-3 p-lg-4 px-md-4 py-md-5 py-5 px-4">
                             <p class="text-white font-weight-bold font-italic">"These solutions will set us apart in our
                                 marketspace."
                             </p>
@@ -294,11 +341,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 p-0">
+                    <div class="col-lg-4 col-md-3 col-sm-12 p-0">
                         <div class="circle">
                             <i class="fa fa-quote-left"></i>
                         </div>
-                        <div class="svp-p mx-lg-3 p-lg-4 p-md-3 py-5 px-4 ">
+                        <div class="svp-p mx-lg-3 p-lg-4 py-md-4 py-md-5 py-5 px-4 ">
                             <p class="text-white font-weight-bold font-italic">"We think Terrene is a game changer for
                                 our
                                 business."
@@ -314,11 +361,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 p-0">
+                    <div class="col-lg-4 col-md-3 col-sm-12 p-0">
                         <div class="circle">
                             <i class="fa fa-quote-left"></i>
                         </div>
-                        <div class="svp-p mx-lg-3 p-lg-4 p-md-3 py-5 px-4 ">
+                        <div class="svp-p mx-lg-3 p-lg-4 px-md-4 py-md-5 py-5 px-4 ">
                             <p class="text-white font-weight-bold font-italic">"Risk Insights will provide us a
                                 competitive
                                 edge."
@@ -327,7 +374,7 @@
 
                             </div>
                         </div>
-                        <div class="mx-lg-3 py-4 ">
+                        <div class="mx-lg-3 py-md-5 py-lg-4">
                             <div class="svp px-3">
                                 <h6>SVP Small Business, </h6>
                                 <p> Tier 1 Carrier</p>
@@ -346,7 +393,7 @@
                 </div>
                 <div class="col-lg-12">
                     <div class="d-flex flex-wrap flex-row justify-content-center mx-auto col-lg-8 p-0">
-                        <p class="text-center wt-800">Our solutions require as little as one field of
+                        <p class="text-lg-center">Our solutions require as little as one field of
                             data to return
                             insights
                             that previously went<br>
@@ -373,7 +420,6 @@
                 </div>
             </div>
         </div>
-    </section>
     </section>
     <section class="futare-section ptb">
         <div class="container">
@@ -405,7 +451,7 @@
                     </div>
                 </div>
                 <div
-                    class="fure-box d-flex flex-wrap flex-row justify-content-between align-items-center wt-100 p-0 pt-5">
+                    class="fure-box d-flex flex-wrap flex-row justify-content-between align-items-center wt-100 p-0 pt-lg-5">
                     <div class="gallery-col bg-white px-2 my-3 m-lg-0">
                         <img class="mx-auto d-block py-3" src="img/Terrene-Dektop_Home-page-4-1.png" alt="">
                         <h5 class="text-center font-weight-bold pb-3">Natural Language Processing</h5>
@@ -452,7 +498,7 @@
                             </div>
                         </div>
                     </form>
-                    <form>
+                    <form action="/action_page.php">
                         <div class="form-row">
                             <div class="col-lg-5 m-3">
                                 <input type="text" class="form-control" style="height: 50px;" id="email"
@@ -463,10 +509,10 @@
                                     name="Company">
                             </div>
                         </div>
+                        <div class="red-button px-4 p-0">
+                            <input class="orng form-input" type="submit" value="REQUEST DEMO">
+                        </div>
                     </form>
-                    <div class="red-button px-4 p-0">
-                        <button class="orng">REQUEST DEMO</button>
-                    </div>
                 </div>
             </div>
     </section>
@@ -475,7 +521,7 @@
             <div class="col-lg-12 col-md-12 col-sm-12 d-flex flex-row flex-wrap p-0">
                 <div
                     class="footer-container wt-100 d-flex flex-wrap flex-row justify-content-between align-items-start p-0">
-                    <div class="col-lg-3 col-md-6 col-sm-6 p-0 pb-3">
+                    <div class="col-lg-3 col-md-6 col-sm-6 p-0 pb-4">
                         <a href="#">
                             <img class="sz" src="img/terrene_logo_slogan-dark.png" alt="">
                         </a>
